@@ -3,6 +3,10 @@
 //
 
 /*
+ * This simple library in this header file, detect which use you use and return an integer according to your system.
+ */
+
+/*
  * I design an int code for detect any OS, the following list are the codes:
  * [2] -> Windows OS
  * [3] -> Linux OS
