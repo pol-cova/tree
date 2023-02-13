@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "tree",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-Debug-f80f97d10c0ee226f57b.json",
+					"name" : "test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "tree::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-tree-Debug-7d34cbd2a810833313b7.json",
+					"jsonFile" : "target-tree-Debug-a0d0479d9bda1e0375ab.json",
 					"name" : "tree",
 					"projectIndex" : 0
 				}

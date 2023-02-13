@@ -15,11 +15,13 @@
  * dst.h this library include an option for create many tree combinations with standard symbols
  * unitree.h this library include a special version of a tree with a unicode standard.
  * the function exit(0), kill the execution of this program
+ * ctree.h this library include the prebuilt function to print tree ascii version in your console
  */
 #include "tree.h"
 #include "dos.h"
 #include "dst.h"
 #include "unitree.h"
+#include "ctree.h"
 
 // Main function all program are inside it
 int main() {
@@ -49,20 +51,21 @@ int main() {
              */
 
             // These are standard messages
+            banner();
             printf("Windows version :) \n");
             printf("Tree developed by Paul Contreras \n");
             printf("tree.h v1.0.0\n");
             // This function is from tree.h that include the standard tree with * and #
             tree();
             printf("\n");
-            // This function is from tree.h that include the unicode tree with standard emojis
-            windows_tree_version();
+            // This function is from ctree.h that include the unicode tree with standard ascii
+            ftree();
             system("pause");
             /*
              * Here the program ask if the user want to create a new standard version if the answer is y, the
              * program display a new function inside dst.h
              */
-            printf("Do you wanna to create a own tree version  \U0001f384? y/n: ");
+            printf("Do you wanna to create a own tree version  :) y/n: ");
             scanf("%c", &userOptPer);
             printf("You selected : %c \n", userOptPer);
             system("cls");
@@ -99,18 +102,23 @@ int main() {
                  * If the user answer is y the program return an epic tree with a message, else only return the message
                  */
                 if (userOptUni == 'y'){
-                    /* uni_epic_tree is a function inside unitree.h that return a tree with unicode emojis, so
+                    /* atree is a function inside ctree.h that return a tree with coloured ascii version, so
                      * it's more epic that a simple symbol
                     */
-                    uni_epic_tree();
+                    atree();
+                    system("pause");
                     printf("Thanks for using this software! :)\n");
                     printf("GITHUB : github/pol-cova");
                 } else if (userOptUni == 'n'){
+                	atree();
+                	system("pause");
                     printf("Thanks for using this software! :)\n");
                     printf("GITHUB : github/pol-cova");
                     exit(0);
                 }
             } else if (userOptPer == 'n'){
+            	atree();
+            	system("pause");
                 printf("Thanks for using this software! :)\n");
                 printf("GITHUB : github/pol-cova");
                 exit(0);
@@ -194,7 +202,8 @@ int main() {
              */
 
             // These are standard messages
-            printf("MacOsX version <3\n");
+            banner();
+            printf("MacOsX version ( ͡° ͜ʖ ͡°)\n");
             printf("Tree developed by Paul Contreras \n");
             printf("tree.h v1.0.0\n");
             tree();
@@ -202,11 +211,15 @@ int main() {
             epicTree();
             printf("Press any key to continue...");
             getchar();
+            printf("Really do you think that last tree it's mine?...¯\\_(ツ)_/¯ \n");
+            printf("hahahah\n");
+            ftree();
+            printf("Epic no....?\n");
             /*
              * Here the program ask if the user want to create a new standard version if the answer is y, the
              * program display a new function inside dst.h
              */
-            printf("Do you wanna to create a own tree version  \U0001f384? y/n: ");
+            printf("Do you wanna to create your own tree version  \U0001f384? y/n: ");
             scanf("%c", &userOptPer);
             printf("You selected : %c \n", userOptPer);
             system("clear");
@@ -239,19 +252,21 @@ int main() {
                  * If the user answer is y the program return an epic tree with a message, else only return the message
                  */
                 if (userOptUni == 'y'){
-                    /* uni_epic_tree is a function inside unitree.h that return a tree with unicode emojis, so
+                    /* atree is a function inside ctree.h that return a tree with coloured ansi ascii, so
                      * it's more epic that a simple symbol
                     */
-                    uni_epic_tree();
+                    atree();
                     printf("Thanks for using this software! :)\n");
                     printf("GITHUB : github/pol-cova");
                 } else if (userOptUni == 'n'){
+                    atree();
                     printf("Thanks for using this software! :)\n");
                     printf("GITHUB : github/pol-cova");
                     exit(0);
                 }
 
             } else if (userOptPer == 'n'){
+                atree();
                 printf("Thanks for using this software! :)\n");
                 printf("GITHUB : github/pol-cova");
                 exit(0);

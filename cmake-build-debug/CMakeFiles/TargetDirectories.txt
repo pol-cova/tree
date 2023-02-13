@@ -1,3 +1,4 @@
 /Users/paulcontreras/CLionProjects/tree/cmake-build-debug/CMakeFiles/tree.dir
+/Users/paulcontreras/CLionProjects/tree/cmake-build-debug/CMakeFiles/test.dir
 /Users/paulcontreras/CLionProjects/tree/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/paulcontreras/CLionProjects/tree/cmake-build-debug/CMakeFiles/rebuild_cache.dir
