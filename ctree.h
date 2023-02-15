@@ -2,10 +2,6 @@
 // Created by Paul Contreras on 13/02/23.
 //
 
-/*
- * This library is for print ascii art in cmd and terminal, so this code, read arte from .txt source
- * and print in your command prompt
- */
 #ifndef TREE_CTREE_H
 #define TREE_CTREE_H
 
@@ -19,7 +15,7 @@ int banner(void)
     char *filename = "ascii-art.txt";
     FILE *fptr;
 
-    fptr = fopen("C:/Users/compa/OneDrive/Escritorio/tree 4/tree/resources/banner_header.txt", "r");
+    fptr = fopen("./resources/banner_header.txt", "r");
 
 
     if( fptr == NULL)
@@ -41,7 +37,7 @@ int ftree(void)
     char *filename = "ascii-art.txt";
     FILE *fptr;
 
-    fptr = fopen("C:/Users/compa/OneDrive/Escritorio/tree 4/tree/resources/ascii-art.txt", "r");
+    fptr = fopen("./resources/ascii-art.txt", "r");
 
 
     if( fptr == NULL)
@@ -60,7 +56,7 @@ int atree(void)
     char *filename = "ascii-art.txt";
     FILE *fptr;
 
-    fptr = fopen("C:/Users/compa/OneDrive/Escritorio/tree 4/tree/resources/wtree.ansi.txt", "r");
+    fptr = fopen("./resources/tree1.ansi.txt", "r");
 
 
     if( fptr == NULL)

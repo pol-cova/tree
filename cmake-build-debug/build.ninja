@@ -69,35 +69,35 @@ build tree: C_EXECUTABLE_LINKER__tree_Debug CMakeFiles/tree.dir/main.c.o
   TARGET_PDB = tree.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target test
+# Object build statements for EXECUTABLE target tre
 
 
 #############################################
-# Order-only phony target for test
+# Order-only phony target for tre
 
-build cmake_object_order_depends_target_test: phony || CMakeFiles/test.dir
+build cmake_object_order_depends_target_tre: phony || CMakeFiles/tre.dir
 
-build CMakeFiles/test.dir/test.c.o: C_COMPILER__test_Debug /Users/paulcontreras/CLionProjects/tree/test.c || cmake_object_order_depends_target_test
-  DEP_FILE = CMakeFiles/test.dir/test.c.o.d
+build CMakeFiles/tre.dir/tree.c.o: C_COMPILER__tre_Debug /Users/paulcontreras/CLionProjects/tree/tree.c || cmake_object_order_depends_target_tre
+  DEP_FILE = CMakeFiles/tre.dir/tree.c.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu2x
-  OBJECT_DIR = CMakeFiles/test.dir
-  OBJECT_FILE_DIR = CMakeFiles/test.dir
+  OBJECT_DIR = CMakeFiles/tre.dir
+  OBJECT_FILE_DIR = CMakeFiles/tre.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target test
+# Link build statements for EXECUTABLE target tre
 
 
 #############################################
-# Link the executable test
+# Link the executable tre
 
-build test: C_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/test.c.o
+build tre: C_EXECUTABLE_LINKER__tre_Debug CMakeFiles/tre.dir/tree.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  OBJECT_DIR = CMakeFiles/test.dir
+  OBJECT_DIR = CMakeFiles/tre.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = test
-  TARGET_PDB = test.dbg
+  TARGET_FILE = tre
+  TARGET_PDB = tre.dbg
 
 
 #############################################
@@ -133,7 +133,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/paulcontreras/CLionProjects/tree/cmake-build-debug
 
-build all: phony tree test
+build all: phony tree tre
 
 # =============================================================================
 # Built-in targets
